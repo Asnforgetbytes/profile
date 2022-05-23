@@ -3,6 +3,10 @@
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
 // Plus imports for other components in your app.
+@font-face {
+  font-family: Bahnschrift;
+  src: url('./assets/Fonts/bahnschrift.ttf');
+}
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -53,6 +57,12 @@ $final_profile-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 // The warn palette is optional (defaults to red).
 $final_profile-warn: mat.define-palette(mat.$red-palette);
 
+$custum-typography: mat.define-typography-config(
+   
+    $font-family: Bahnschrift,
+  );
+
+
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
 $final_profile-theme: mat.define-light-theme((
@@ -60,7 +70,8 @@ $final_profile-theme: mat.define-light-theme((
     primary: $final_profile-primary,
     accent: $final_profile-accent,
     warn: $final_profile-warn,
-  )
+  ),
+  typography: $custum-typography
 ));
 
 // Include theme styles for core and each component used in your app.
@@ -76,8 +87,8 @@ $final_profile-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%;  }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { height: 100%; }
+body { margin: 0; font-family: Bahnschrift, Roboto,  "Helvetica Neue", sans-serif; }
 
 
 

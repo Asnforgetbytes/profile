@@ -3,17 +3,22 @@ import { CommonModule } from '@angular/common';
 import { NavegacionComponent } from './navegacion/navegacion.component';
 import { MaterialModule } from '../material/material.module';
 import { RouterModule } from '@angular/router';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
-  declarations: [NavegacionComponent],
+  declarations: [NavegacionComponent, ToolbarComponent],
   imports: [
     CommonModule,
     MaterialModule,
-    RouterModule
+    RouterModule,
+    FlexLayoutModule
   ],
   exports:[
-    NavegacionComponent
+    NavegacionComponent,
+    ToolbarComponent,
+    
   ]
 })
 export class SharedModule { }

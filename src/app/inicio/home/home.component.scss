@@ -1,0 +1,69 @@
+h1,h2,h3{
+    font-family: Bahnschrift, Roboto,  "Helvetica Neue", sans-serif;
+}
+.soy {
+    background-color: white;
+    aside{
+        div{
+            clip-path: polygon(5% 0%, 100% 0, 95% 100%, 0% 100%);
+            background-color: #00405b;
+            h1{
+                color: #fafafa;
+                text-align: center;
+            }
+        }
+        h2,h3{
+            padding-left: 10%;
+        }
+        h2{
+            color: #00405b;
+        }
+        mat-divider{
+            width: 100%;
+        }
+    }
+    article{
+        img{
+            max-height: 90vh;
+        }
+        
+    }
+    
+}
+.resaltador{
+    width: 100%;
+}
+@media screen and (max-width: 1279px){
+    .soy{
+        aside{
+            box-sizing: border-box;
+            margin-top: 3vh;
+            div{
+                margin-top: 2%;
+                margin-bottom: 2%;
+            }
+        }
+    }
+}
+.segunda{
+    margin-bottom: 10%;
+    margin-top: 2%;
+    min-height: 50vh;
+    article{
+        margin-left: 1%;
+        h2{
+            color: #00405b;
+        }
+        h3{
+            strong{
+                color: #00405b;
+            }
+            
+            padding-left: 5%;
+        }
+    }
+    mat-divider{
+        height: 350px;
+        
+    }
+}
