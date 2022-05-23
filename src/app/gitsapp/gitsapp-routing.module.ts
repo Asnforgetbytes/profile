@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomegiftsComponent } from './homegifts/homegifts.component';
+import { GifsPageComponent } from "./gifs-page/gifs-page.component";
+
 const routes: Routes = [
   {
     path: '', 
-    component: HomegiftsComponent,
+    component: GifsPageComponent,
     children: [
       
     ]
