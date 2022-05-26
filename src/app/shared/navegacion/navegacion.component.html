@@ -9,6 +9,7 @@
       <a mat-list-item [routerLink]="['/giftsapp']" routerLinkActive="router-link-active" >GiftsApp</a>
       <a mat-list-item [routerLink]="['/contador']" routerLinkActive="router-link-active" >Contador</a>
       <a mat-list-item [routerLink]="['/paisesapp']" routerLinkActive="router-link-active" >PaisesApp</a>
+      <a mat-list-item [routerLink]="['/contacto']" routerLinkActive="router-link-active" >contactenos</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -31,7 +32,7 @@
         <button [routerLink]="['/contador']" routerLinkActive="router-link-active" mat-menu-item>Contador</button>
         <button [routerLink]="['/paisesapp']" routerLinkActive="router-link-active" mat-menu-item>PaisesApp</button>
       </mat-menu>
-      <button *ngIf="!(isHandset$ | async)" mat-button color="primary">Contactenos</button>
+      <button *ngIf="!(isHandset$ | async)" mat-button color="primary" [routerLink]="['/contacto']" routerLinkActive="router-link-active" >Contactenos</button>
       
     </mat-toolbar>
     

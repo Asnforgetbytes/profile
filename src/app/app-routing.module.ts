@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'paisesapp', 
     loadChildren: () => import('./pais/pais.module').then(m => m.PaisModule)
   },
+  {
+    path: 'contacto', 
+    loadChildren: () => import('./contacto/contacto.module').then(m => m.ContactoModule)
+  },
   { path: '', pathMatch: 'full', redirectTo: 'inicio' },
   { path: '**', redirectTo: "inicio" },
 ];

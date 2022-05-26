@@ -1,4 +1,4 @@
-h1,h2,h3{
+h1,h2,h3,p{
     font-family: Bahnschrift, Roboto,  "Helvetica Neue", sans-serif;
 }
 .soy {
@@ -60,6 +60,11 @@ h1,h2,h3{
             }
             
             padding-left: 5%;
+        }
+        p{
+            strong{
+                color: #00405b;
+            }
         }
     }
     mat-divider{
