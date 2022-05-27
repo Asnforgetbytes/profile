@@ -6,6 +6,7 @@ import { GitsappRoutingModule } from './gitsapp-routing.module';
 import { GifsPageComponent } from "./gifs-page/gifs-page.component";
 import { BusquedaComponent } from "./busqueda/busqueda.component";
 import { ResultadosComponent } from "./resultados/resultados.component";
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ResultadosComponent } from "./resultados/resultados.component";
     
     GifsPageComponent,
     BusquedaComponent,
-    ResultadosComponent
+    ResultadosComponent,
+    SidebarComponent
   ],
   imports: [
     CommonModule,
