@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { GifsService} from "../services/gifs.service";
 
 @Component({
   selector: 'app-sidebar',
@@ -7,16 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-  _historial = [] 
-  constructor( ) { 
-    if( localStorage.getItem('historial') ){
-        this._historial = JSON.parse( localStorage.getItem('historial')! );
-      }
+  get _historial(){
+    return this.historia.historial
+     
+  }
+  constructor( private historia:GifsService ) { 
+    
   }
 
  
 
   ngOnInit(): void {
+    
   }
 
 }

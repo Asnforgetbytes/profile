@@ -5,9 +5,15 @@ aside{
     top: 0;
     left: 0;
     
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     
+    h1{
+        text-align: center;
+        margin-top: 10vh;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     
 }
