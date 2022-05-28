@@ -19,6 +19,7 @@ import { ContactoRoutingModule } from './contactoRouting';
     FlexLayoutModule,
     FormsModule,
     ContactoRoutingModule,
+    FormsModule
   ]
 })
 export class ContactoModule { }
