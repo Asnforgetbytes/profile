@@ -15,10 +15,14 @@ export class SidebarComponent implements OnInit {
     
   }
 
- 
-
   ngOnInit(): void {
     
   }
+  buscar(query:string){
+    this.historia.buscarGifs(query);
+  }
+
+
+
 
 }

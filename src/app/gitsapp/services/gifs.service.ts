@@ -20,9 +20,9 @@ export class GifsService {
   }
 
   constructor( private http: HttpClient ) {
-      this._historial = JSON.parse(localStorage.getItem('historial')!) || [];
-      this.resultados = JSON.parse(localStorage.getItem('resultados')!) || [];
-      console.log(this.resultados)
+      this._historial = JSON.parse(localStorage.getItem('historial')!) || ["dragon"];
+      this.resultados = JSON.parse(localStorage.getItem('resultados')!) || this.buscarGifs("dragon");
+      
  }
 
 
