@@ -5,8 +5,7 @@ import { Country } from '../../interfaces/pais.interface';
 @Component({
   selector: 'app-pais-tabla',
   templateUrl: './pais-tabla.component.html',
-  styles: [
-  ]
+  styleUrls:['./pais-tabla.scss']
 })
 export class PaisTablaComponent implements OnInit {
 

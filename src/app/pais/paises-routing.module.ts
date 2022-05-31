@@ -9,6 +9,7 @@ const routes: Routes = [
   {
     path: '', 
     component: InicialComponent,
+    
     children: [
       { path: 'porpais', component: PorPaisComponent },
       { path: 'porRegion', component: PorRegionComponent },
