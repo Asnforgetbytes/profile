@@ -23,7 +23,7 @@
         <mat-icon aria-label="Side nav toggle icon" color="primary" >menu</mat-icon>
       </button>
       <span *ngIf="isHandset$ | async" class="example-spacer"></span>
-      <button [routerLink]="['/inicio']" routerLinkActive="router-link-active" mat-button color="primary"><span>&#60;&#47;</span>Asnforget <span>&#62;</span> </button>
+      <button [routerLink]="['/inicio']" routerLinkActive="router-link-active" mat-button color="primary"><span>&#60;&#47;</span>Asnforgets <span>&#62;</span> </button>
       <span *ngIf="!(isHandset$ | async)" class="example-spacer"></span>
       <button *ngIf="!(isHandset$ | async)" mat-button color="primary" [routerLink]="['/inicio']" routerLinkActive="router-link-active">Quien soy</button>
       <button *ngIf="!(isHandset$ | async)" mat-button color="primary" [matMenuTriggerFor]="menu" >Proyectos</button>
