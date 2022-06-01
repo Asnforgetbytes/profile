@@ -13,15 +13,16 @@
             
             <mat-divider ></mat-divider>
         </aside>
-        <article fxFlex="45">
+        <article fxFlex="35">
             <img src="../../../assets/images/prueba.png"   alt="@Asnforgetbytes">
         </article>
        
         
     </section>
-    <section class="segunda" fxLayout="row" fxLayout.lt-md="column"  fxLayoutAlign="space-around center">
-        <article  >
-            <h2><strong>ESTUDIOS</strong></h2>
+
+    <section class="segunda" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center">
+        <article fxFlex="40" fxFlex.lt-md="100" fxLayout="column" >
+            <h2 ><strong>ESTUDIOS</strong></h2>
             <h3><strong>Diplomado en programación web</strong><br> Misión tic (Cniversidad de Antioquia)</h3>
             
             <h3><strong>Curso de manejo de angular 13</strong> <br>Udemy </h3>
@@ -37,17 +38,37 @@
             <h3><strong>COMPLEMENTARIA VIRTUAL EN ADOBE FLASH PROFESIONAL CS5.5 2013</strong><br> SENA</h3>
             
         </article>
-        <mat-divider [vertical]="true"></mat-divider>
-        <article   >
-            <h2><strong> EXPERIENCIA LABORAL</strong></h2>
-            <p>Feb 2015 - Sep 2021 <br>
+        <mat-divider class="especial" fxFlex="2" fxHide.lt-md="true"  fxLayout="column" fxLayoutAlign="center center"  [vertical]="true"></mat-divider>
+        <mat-divider fxFlex="2" fxHide.gt-sm="true" fxShow.lt-md="true" fxLayoutAlign="start center" fxLayout="column"></mat-divider>
+        <article fxFlex="40" fxFlex.lt-md="100" fxLayout="column" fxLayoutAlign="center center"  >
+            <h2 ><strong>HABILIDADES</strong></h2>
+            <h3><strong>INGLES</strong> C1</h3>
+            <h3><strong>CSS</strong> medio</h3>
+            <h3><strong>JAVASCRIPT</strong> medio</h3>
+            <h3><strong>HTML5</strong> medio</h3>
+            <h3><strong>ANGULAR</strong> medio-alto</h3>
+            <h3><strong>BOOTSTRAP</strong> medio</h3>
+            <h3><strong>ANGULAR MATERIAL</strong> medio</h3>
+            <h3><strong>FLEX LAYOUT</strong> medio</h3>
+            
+        </article>
+    </section>
+    
+    <section class="segunda" fxLayout.lt-md="column"  >
+       
+            <mat-divider ></mat-divider>
+            <article>
+                <h2><strong> EXPERIENCIA LABORAL</strong></h2>
+                <p>Feb 2015 - Sep 2021 <br>
                 Fraquicia Nakua Spa sas,<br>
                 Sector Hoteleria y Turismo</p>
-            <p><strong> Cargo ocupado </strong><br>
+                <p><strong> Cargo ocupado </strong><br>
                 gerente de instalaciones Santa Marta</p>
-            <p>Tareas administracion de personal , recepcion de peticiones y reclamos horarios rotativos atencion de recepcion generar ordenes de compra y manejo de compra y
+                <p>Tareas administracion de personal , recepcion de peticiones y reclamos horarios rotativos atencion de recepcion generar ordenes de compra y manejo de compra y
                     manejo administrativo de los requerimientos de las instalaciones</p>
-        </article>
+        
+            </article>
+            
     </section>
 
 
